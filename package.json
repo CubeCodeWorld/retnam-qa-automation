@@ -1,0 +1,26 @@
+{
+  "name": "qa-automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test --project=chromium --workers=1",
+    "test:api": "playwright test tests/api.spec.ts --project=chromium --workers=1",
+    "test:ui": "playwright test tests/login.spec.ts tests/transaksi.spec.ts --project=chromium --workers=1",
+    "test:headed": "playwright test --project=chromium --workers=1 --headed",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.5",
+    "mysql2": "^3.24.5"
+  }
+}
