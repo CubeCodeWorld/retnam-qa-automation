@@ -70,3 +70,6 @@ qa-automation/
 ├── playwright.config.ts
 ├── README.md
 └── tsconfig.json
+
+Copyright © 2026 CubeCodeWorld / VanJaya.
+All rights reserved.
